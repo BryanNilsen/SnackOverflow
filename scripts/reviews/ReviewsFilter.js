@@ -23,9 +23,6 @@ const eventHub = document.querySelector("body")
 eventHub.addEventListener("reviewsNavClicked", event => {
     ReviewsFilter()
 })
-// eventHub.addEventListener("menuSelected", event => {
-//     ReviewsFilter()
-// })
 
 eventHub.addEventListener("change", (changeEvent) => {
     // check if target id is "reviews--filter"

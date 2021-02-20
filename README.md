@@ -5,3 +5,6 @@
 1. Event Listeners / Custom Events
 1. HTTP Requests: GET / POST / DELETE
 1. DOM Manipulation
+
+## Requirements:
+1. json-server

@@ -1,6 +1,7 @@
 import "./Reviews.js"
 import "./ReviewForm.js"
 import "./ReviewsFilter.js"
+import "./ReviewsSort.js"
 
 export const ReviewsNavlink = () => {
     const contentTarget = document.getElementById("reviews-navlink")

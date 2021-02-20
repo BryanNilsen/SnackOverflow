@@ -42,11 +42,27 @@ const render = (reviewsArray) => {
 
 eventHub.addEventListener("ReviewsFiltered", event => {
     const filterOption = event.detail.filterOption
-    console.log('filterOption: ', filterOption);
     if (filterOption === 0) {
         render(allReviewItems)
     } else {
         filteredReviewItems = allReviewItems.filter(review => review.rating === filterOption)
         render(filteredReviewItems)
     }
+})
+eventHub.addEventListener("ReviewsSorted", event => {
+    const sortOption = event.detail.sortOption
+    let sortedReviewItems = filteredReviewItems
+    if (sortOption === 1) {
+        sortedReviewItems.sort((itemA, itemB) => new Date(itemB.date) - new Date(itemA.date))
+    }
+    if (sortOption === 2) {
+        sortedReviewItems.sort((itemA, itemB) => new Date(itemA.date) - new Date(itemB.date))
+    }
+    if (sortOption === 3) {
+        sortedReviewItems.sort((itemA, itemB) => itemB.rating - itemA.rating)
+    }
+    if (sortOption === 4) {
+        sortedReviewItems.sort((itemA, itemB) => itemA.rating - itemB.rating)
+    }
+    render(sortedReviewItems)
 })
