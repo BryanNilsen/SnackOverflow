@@ -33,6 +33,21 @@ nav {
     justify-content: space-around;
 }
 
+.ulnav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.linavlink {
+    color: white;
+    font-size: 1.3em;
+    opacity: .7;
+    list-style-type: none;
+    align-items: center;
+    display: flex;
+}
+
 nav div {
     display: flex;
     align-items: center;
