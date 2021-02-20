@@ -1,0 +1,119 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); */
+
+@import './reviews.css';
+
+
+body {
+    color: rgb(40, 40, 40);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4D1717;
+    color: white;
+}
+
+.nav__wrapper {
+    display: flex;
+    margin: auto;
+    max-width: 800px;
+}
+
+.logo {
+    padding: 1em;
+    min-width: 300px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+.navlink {
+    color: white;
+    font-size: 1.3em;
+    opacity: .7;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.subnav {
+    display: flex;
+    margin: auto;
+    padding: 1em 0;
+    max-width: 700px;
+}
+
+.subnav>div {
+    margin-right: 1em;
+}
+
+.main__wrapper {
+    margin: auto;
+    display: flex;
+    max-width: 700px;
+}
+
+main {
+    width: 100%;
+}
+
+.main--width {
+    max-width: 700px;
+}
+
+
+#page-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews__container {
+    display: flex;
+    margin-right: 2.5em;
+}
+
+
+select {
+    padding: .3em;
+}
+
+
+/* FLEX */
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* MARGINS */
+
+.mar-l {
+    margin-left: 2em;
+}
+
+.mar-r {
+    margin-right: 2em;
+}
+
+.mar-b {
+    margin-bottom: 2em;
+}
